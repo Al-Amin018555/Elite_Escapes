@@ -439,6 +439,7 @@ footer .logo-container {
     font-size: 1rem;
     font-weight: 300;
     color: #131318;
+    margin-top: 50px;
 
 }
 
@@ -563,5 +564,8 @@ footer .logo-container {
         width: 90%;
         margin: 0px 20px;
 
+    }
+    footer{
+        padding: 30px;
     }
 }
