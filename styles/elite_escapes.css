@@ -446,6 +446,16 @@ footer .logo-container {
 /* responsive media queries */
 /* for mobile devices */
 @media screen and (max-width: 600px) {
+    .nav-section{
+        flex-direction: column;
+    }
+    .nav-items{
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 400px;
+       
+    }
+   
     .banner {
         padding: 20px;
         height: auto;
