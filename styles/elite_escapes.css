@@ -1,9 +1,16 @@
 /* imported mulish font from google font */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 /* common shared styles */
-body {
+/* body {
+    max-width: 1170px;
+    border: 2px solid orange;
+    margin: 0 auto;
+} */
+
+body header,
+main {
     max-width: 1170px;
     border: 2px solid orange;
     margin: 0 auto;
@@ -54,8 +61,10 @@ header .hide {
     font-weight: 400;
     color: rgba(19, 19, 24, 0.7);
 }
+
 .cards-description,
-.newsletter-description {
+.newsletter-description,
+.footer-description {
 
     font-size: 1rem;
     font-weight: 400;
@@ -329,23 +338,26 @@ select {
 }
 
 /* newsletter related styles */
-.newsletter{
+.newsletter {
     margin-top: 70px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
 }
-.newsletter-form{
+
+.newsletter-form {
     border: 1px solid rgba(255, 84, 0, 1);
     border-radius: 16px;
     width: 40%;
     padding: 25px;
 }
-.newsletter-description{
+
+.newsletter-description {
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(19, 19, 24, 0.1);
 }
-.newsletter-form input{
+
+.newsletter-form input {
     display: block;
     width: 100%;
     margin: 15px 0px;
@@ -355,25 +367,79 @@ select {
     padding: 15px;
     background-color: rgba(19, 19, 24, 0.05);
 }
-.newsletter-form button{
+
+.newsletter-form button {
     width: 100%;
 }
-.newsletter-form ::placeholder{
+
+.newsletter-form ::placeholder {
     color: rgba(19, 19, 24, 0.3);
     font-size: 1rem;
     font-weight: 400;
-    
+
 }
-.newsletter-img{
+
+.newsletter-img {
     /* border: 2px solid red; */
     /* max-width: 672px; */
     width: 60%;
 }
-.newsletter-img img{
+
+.newsletter-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
+}
+
+/* footer related styles */
+
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    margin-top: 70px;
+    padding: 150px 0px;
+}
+
+/* .footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+.footer-container .logo-container,
+.footer-description,
+.social-links {
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    max-width: 872px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    padding-bottom: 50px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    font-family: "Inter", serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #131318;
+
 }
 
 /* responsive media queries */
@@ -486,13 +552,16 @@ select {
         grid-column: 1/span 1;
         grid-row: 3/span 1;
     }
-    .newsletter{
+
+    .newsletter {
         flex-direction: column;
         margin-top: 20px;
     }
-   .newsletter-form,.newsletter-img{
+
+    .newsletter-form,
+    .newsletter-img {
         width: 90%;
         margin: 0px 20px;
-        
+
     }
 }
