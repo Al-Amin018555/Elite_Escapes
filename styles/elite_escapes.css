@@ -12,7 +12,7 @@
 body header,
 main {
     max-width: 1170px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     margin: 0 auto;
 }
 
